@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
     <link rel="stylesheet" href="./Style/index.css">
+    <!-- <script src="./Scripts/exemplo.js"></script> -->
 </head>
 
 <body>
-
     <!-- Cabeçalho -->
-    <header>
+    <header id="header">
         <h1>
             Minha primeira página HTML
         </h1>
-            <br>
-            <a href="./page.html">outra pagina</a>
+        <br>
+        <a href="./page.html">outra pagina</a>
     </header>
     <!-- Conteudo da pagina -->
     <main>
         <section>
-            <h2>Sessão de lista:</h2>
+            <h2 id="exemplo-H2">Sessão de lista:</h2>
 
             <h3>Lista não ordenada</h3>
             <ul>
@@ -37,14 +37,18 @@
             </ol>
         </section>
 
-       <section>
+        <section>
             <h2>Imagens e vídeos</h2>
             <h3>Imagens</h3>
             <figure>
-            <img src="https://i.redd.it/dvj2x3qmps441.jpg" alt="Image de um cachorro sovietico" width"300" height="200">
+                <img src="https://i.redd.it/dvj2x3qmps441.jpg" alt="Image de um cachorro sovietico" width"300"
+                    height="200">
             </figure>
             <H3>Vídeos</H3>
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/qigIYJWsyWE?si=VNh2i6JjVnfRF6eD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/qigIYJWsyWE?si=VNh2i6JjVnfRF6eD"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <section class="last">
@@ -81,15 +85,61 @@
                 </div>
 
                 <button type="submit">Enviar</button>
+
+                <button id='buttonExemploJs' type="button">Exemplo Js</button>
+
             </form>
         </section>
     </main>
 
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="footer">
         <br>Minha primeira página - &copy; Todos os direitos reservados 2025
     </footer>
+
+    <!-- <script>
+        // const exemploH2 = document.getElementById("exemplo-H2");
+        // // console.log("element ====>", element);
+        // exemploH2.style.color = 'blue';
+
+        // const novaH1 = document.createElement('h1');
+        // novaH1.textContent = "NOVO ELEMENTO H1NA TELA";
+        // console.log("novaH1 ====>", novaH1);
+        // // document.body.appendChild(novaH1);
+
+        // exemploH2.appendChild(novaH1);
+
+        // // const headerColor = document.getElementById("header");
+        // // headerColor.style.backgroundColor = 'lightgreen';
+
+        // // const footerSize = document.getElementById("footer");
+        // // footerSize.style.fontSize = '10px';
+
+        // const buttonExemploJs = document.getElementById('buttonExemploJs');
+        // buttonExemploJs.addEventListener('click', () => {
+        //     alert("Batata botão clicado!");
+        // });
+        // const form = document.querySelector('form');
+        // form.addEventListener('submit', (event) => {
+        //     event.preventDefault(); // Impede o envio do formulário
+        //     console.log("Formulário enviado com sucesso!");
+        // });
+
+        // // const header = document.getElementById("header");
+        // // header.addEventListener('mouseover', () => {
+        //     //     // alert("Não pode!");
+        //     // });
+
+        // document.addEventListener("keydown", (event) => {
+        //     console.log(`Tecla clicada: ${event.key}`)
+        //     // console.log("Tecla clicada" + event.key});
+        //     // console.log("Tecla clicada", event.key);
+
+        // })
+    </script> -->
+    <script src="./Scripts/exemplo.js"></script>
+
 </body>
 
 </html>
